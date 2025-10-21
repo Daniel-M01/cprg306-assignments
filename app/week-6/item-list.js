@@ -8,6 +8,7 @@ export default function ItemList() {
   const [sortBy, setSortBy] = useState("name");
   const itemsArray = [...itemsData];
 
+  // Sorting Logic
   itemsArray.sort((a, b) => {
     const valueA = a[sortBy].toUpperCase();
     const valueB = b[sortBy].toUpperCase();
